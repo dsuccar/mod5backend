@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 4) do
   create_table "lyrics", force: :cascade do |t|
     t.string "text"
     t.string "answer"
+    t.string "song"
     t.integer "rapper_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -32,6 +33,7 @@ ActiveRecord::Schema.define(version: 4) do
     t.string "name"
     t.string "bio"
     t.string "hometown"
+    t.integer "hp"
     t.boolean "isboss"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

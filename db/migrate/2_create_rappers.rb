@@ -4,7 +4,9 @@ class CreateRappers < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :bio
       t.string :hometown
+      t.integer :hp
       t.boolean :isboss
+
 
       t.timestamps
     end
