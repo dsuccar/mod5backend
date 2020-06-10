@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+    # get 'rappers/:id/bosses', to: 'rappers#bosses'
   resources :rappers, only: [:index, :show]
   resources :battles, only: [:index, :show, :create]
   resources :lyrics, only: [:index, :show]

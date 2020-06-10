@@ -14,8 +14,8 @@ ActiveRecord::Schema.define(version: 4) do
 
   create_table "battles", force: :cascade do |t|
     t.integer "user_id"
-    t.integer "rapper_id"
-    t.integer "winner"
+    t.integer "boss_id"
+    t.integer "winner_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

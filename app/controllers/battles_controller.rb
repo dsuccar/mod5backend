@@ -11,8 +11,13 @@ class BattlesController < ApplicationController
   end
 
   def create
-    byebug
+    
+    battle = Battle.create(user_id: params["user_id"], boss_id: params["boss_id"], winner_id: params["winner_id"])
+    
+    render json: battle.to_json
+    
   end
   
 end
 
+ 
