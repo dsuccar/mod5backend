@@ -9,6 +9,11 @@ class UsersController < ApplicationController
     user = User.find(params[:id])
     render json: user
   end
+
+  def update
+    user = User.find(params[:id])
+    user.update(artist_id: params['artist_id'] ) 
+  end
   
 end
 

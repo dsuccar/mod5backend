@@ -2,7 +2,7 @@ class LyricsController < ApplicationController
 
   def index
     lyrics = Lyric.all
-    render json: Lyrics.to_json
+    render json: lyrics.to_json
   end
 
   def show
