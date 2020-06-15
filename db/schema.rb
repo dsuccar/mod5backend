@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 4) do
     t.integer "artist_id"
     t.string "badges"
     t.string "username"
+    t.string "password"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

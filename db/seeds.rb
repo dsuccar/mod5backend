@@ -13,7 +13,7 @@ r4 = Rapper.create(name: "J.Cole", bio:"Dreamville", hometown: "Fayetteville, NC
 r2 = Rapper.create(name: "Jay-Z", bio:"21-time GRAMMY award-winner", hometown:'Brooklyn', isboss: true, hp:100)
 
 
-u1 = User.create(artist_id: nil, username: "Danny", badges:'wind' )
+u1 = User.create(artist_id: r1.id, username: "Danny", password: "d", badges:'wind' )
 
 b1 = Battle.create(user_id: r1.id, boss_id: r2.id, winner_id: u1.id)
 

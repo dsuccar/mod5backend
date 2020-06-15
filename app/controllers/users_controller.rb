@@ -15,5 +15,10 @@ class UsersController < ApplicationController
     user.update(artist_id: params['artist_id'] ) 
   end
   
+  def create
+    
+    user = User.create(username: params['username'], password: params["password"])
+    render json: user
+  end
 end
 

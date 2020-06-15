@@ -4,6 +4,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.integer :artist_id
       t.string :badges
       t.string :username
+      t.string :password
 
       t.timestamps
     end
