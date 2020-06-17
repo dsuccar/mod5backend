@@ -10,5 +10,6 @@ class RappersController < ApplicationController
     render json: rapper
   end
 
+
   
 end

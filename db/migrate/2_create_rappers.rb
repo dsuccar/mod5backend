@@ -6,6 +6,8 @@ class CreateRappers < ActiveRecord::Migration[6.0]
       t.string :hometown
       t.integer :hp
       t.boolean :isboss
+      t.string :badge
+      t.string :gif
 
 
       t.timestamps

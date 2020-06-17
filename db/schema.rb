@@ -35,6 +35,8 @@ ActiveRecord::Schema.define(version: 4) do
     t.string "hometown"
     t.integer "hp"
     t.boolean "isboss"
+    t.string "badge"
+    t.string "gif"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -10,10 +10,12 @@ r1 = Rapper.create(name: "Kanye", bio: "Who isn't kanye?", hometown:'Chicago, IL
 r3 = Rapper.create(name: "Tyler The Creator", bio:"OFWGKTA", hometown:"Ladera Heights, CA", isboss: false, hp:100 )
 r4 = Rapper.create(name: "J.Cole", bio:"Dreamville", hometown: "Fayetteville, NC", isboss: false, hp:100)
 
-r2 = Rapper.create(name: "Jay-Z", bio:"21-time GRAMMY award-winner", hometown:'Brooklyn', isboss: true, hp:100)
+r2 = Rapper.create(name: "Jay-Z", bio:"21-time GRAMMY award-winner", hometown:'Brooklyn', isboss: true, hp:100, badge: 'Brooklyn', gif:"/Gifs/goat.gif")
+r5 = Rapper.create(name: "Kendrick", bio:"Kendrick Lamar Duckworth", hometown: 'Compton', isboss: true, hp:100, badge: 'Compton')
+r6 = Rapper.create(name: "Eminem", bio: "Saturday through sunday, monday.", hometown: "Detroit", isboss:true, hp:100, badge: 'Detroit')
 
 
-u1 = User.create(artist_id: r1.id, username: "Danny", password: "d", badges:'wind' )
+u1 = User.create(artist_id: r1.id, username: "Danny", password: "d", badges:"")
 
 b1 = Battle.create(user_id: r1.id, boss_id: r2.id, winner_id: u1.id)
 
@@ -21,7 +23,7 @@ b1 = Battle.create(user_id: r1.id, boss_id: r2.id, winner_id: u1.id)
 # Boss Lyrics
 l4=Lyric.create(text:"\"That same building today is worth twenty-five million. Guess how I'm feelin'? ____\"", answer:"dumbo",song:"The Story of O.J.", rapper_id: r2.id)
 l5=Lyric.create(text:"\"I sell ice in the winter, I sell fire in hell I am a hustler baby, I’ll sell water to a _____\"", answer:"well",song:"The Hustler", rapper_id: r2.id)
-l6 = Lyric.create(text:"\"Get, that, dirt off your _____\"", answer:"shoulder",song:"Dirt Off Your Shoulder\"", rapper_id: r2.id)
+l6 = Lyric.create(text:"\"Get, that, dirt off your _____\"", answer:"shoulder",song:"Dirt Off Your Shoulder\"", rapper_id: r2.id) 
 
 
 # UserLyrics
