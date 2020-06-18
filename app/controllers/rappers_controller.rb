@@ -6,6 +6,7 @@ class RappersController < ApplicationController
   end
 
   def show
+    # byebug
     rapper = Rapper.find(params[:id])
     render json: rapper
   end

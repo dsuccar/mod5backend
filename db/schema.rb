@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 4) do
     t.string "name"
     t.string "bio"
     t.string "hometown"
-    t.integer "hp"
+    t.integer "lives"
     t.boolean "isboss"
     t.string "badge"
     t.string "gif"
