@@ -8,7 +8,7 @@ class RappersController < ApplicationController
   def show
     # byebug
     rapper = Rapper.find(params[:id])
-    render json: rapper
+    render json: rapper.to_json
   end
 
 
